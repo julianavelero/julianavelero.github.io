@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>About Me</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="../css/index.css">
+<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+      width: 100%;
+    }
+    .container {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      overflow: none;
+      z-index: -1000;
+      top: -10%;
+    }
+    .container{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+
+</head>
+
+
+
+<body>
+
+
+
+
+    </head>
+
+
+
+
+        <div class="container">
+          <div class="info-card-container">
+            <div class="info-card">
+              <div class="info-card__image-exposure info-card__content">
+                <div class="info-card__image-exposure--blend">
+                  </div>
+                  <div class="info-card__image-exposure__item">
+                    </div>
+
+
+
+                     </div>
+
+
+                    <div class="info-card__bio info-card__content">
+                        <h2 class="info-card__bio--title" font-family: 'Permanent Marker', cursive;>Juliana Velez</h2>
+
+                        <p class="info-card__bio--copy">Juliana Velez is a Digital Media and Design major at The Univeristy of Conneticut. She currently works for Apple as a Creative training customers on Apple software and devices. She is a currently expanding her skills as a web developer, but has worked with clients to create logos, flyers, and song covers that are featured on Apple Music.   </p>
+
+                        </div>
+            </div>
+
+        </div>
+
+    </body>
+</html>
+<!-- Navbar (sit on top) -->
+
+<body>
+  <div class="wrapper">
+  <input type="checkbox" id="menuToggler" class="input-toggler" value="1" autofocus="true"/>
+  <label for="menuToggler" id="menuTogglerLabel" class="menu-toggler" role="button" aria-pressed="false" aria-expanded="false" aria-label="Navigation button">
+    <span class="menu-toggler__line"></span>
+    <span class="menu-toggler__line"></span>
+    <span class="menu-toggler__line"></span>
+  </label>
+  <nav id="sidebar" class="sidebar" role="navigation" aria-labelledby="menuTogglerLabel" aria-hidden="true">
+    <ul id="menubar" class="menu" role="menubar" aria-orientation="vertical">
+      <li class="menu__item" role"none"><a class="menu__link" href="../index.html" role="menuitem" tabindex="-1">Intro</a></li>
+      <li class="menu__item" role"none"><a class="menu__link" href="html/Work.html" role="menuitem" tabindex="-1">About</a></li>
+      <li class="menu__item" role"none"><a class="menu__link" href="#" role="menuitem" tabindex="-1">Collaborate</a></li>
+
+    </ul>
+  </nav>
+
+  <script
+  menuToggler.addEventListener('change', function () {
+    if (menuToggler.checked) {
+      menuTogglerLabel.setAttribute('aria-pressed', 'true');
+      sidebar.setAttribute('aria-hidden', 'false');
+    } else {
+      menuTogglerLabel.setAttribute('aria-pressed', 'false');
+      sidebar.setAttribute('aria-hidden', 'true');
+    }
+
+    var _iteratorNormalCompletion = true;
+    var _didIteratorError = false;
+    var _iteratorError = undefined;
+
+    try {
+      for (var _iterator = menuItems[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {if (window.CP.shouldStopExecution(1)){break;}if (window.CP.shouldStopExecution(1)){break;}if (window.CP.shouldStopExecution(1)){break;}
+        var menuItem = _step.value;
+
+        if (menuToggler.checked) {
+          menuItem.setAttribute('tabindex', '0');
+        } else {
+          menuItem.setAttribute('tabindex', '-1');
+        }
+      }
+  window.CP.exitedLoop(1);
+
+  window.CP.exitedLoop(1);
+
+  window.CP.exitedLoop(1);
+
+    } catch (err) {
+      _didIteratorError = true;
+      _iteratorError = err;
+    } finally {
+      try {
+        if (!_iteratorNormalCompletion && _iterator.return) {
+          _iterator.return();
+        }
+      } finally {
+        if (_didIteratorError) {
+          throw _iteratorError;
+        }
+      }
+    }
+  });
+
+
+</script>
+<body>
+
+
+
+</body>
+
+
+</body>
+</html>

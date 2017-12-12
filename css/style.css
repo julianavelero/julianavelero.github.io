@@ -1,0 +1,306 @@
+/***** Info Card Component *****/
+/*******************************/
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.4rem;
+}
+
+/* =14px */
+h1 {
+  font-size: 2.4rem;
+}
+
+/* =24px */
+.info-card-container {
+  width: 100%;
+  min-height: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-image: url(https://www.muralswallpaper.com/app/uploads/clean-white-brick-wall-textures-plain.jpg);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$white', endColorstr='$white',GradientType=1 );
+  /* IE6-9 */
+  position: relative;
+}
+
+.info-card {
+  min-width: 70%;
+  max-width: 70rem;
+  min-height: 60%;
+  height: 35rem;
+  margin: 0 auto;
+  position: relative;
+  background-color: #fff;
+  box-shadow: 1px 1px 25px #F76A57;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.info-card__content {
+  font-family: 'Permanent Marker', cursive;
+  float: left;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.info-card__image-exposure {
+  width: 45%;
+}
+
+.info-card__bio {
+  width: 40%;
+  padding: 5rem;
+  height: auto;
+  font-family: 'Domine', serif;
+}
+.info-card__bio--title {
+  color: #141D1D;
+  font-size: 3.5rem;
+  font-weight: 300;
+}
+.info-card__bio--copy {
+  color: #9da09f;
+  line-height: 2;
+}
+
+.info-card__image-exposure__item {
+  background-image: url(../PIX/me.png);
+  background-color: #fff;
+  background-position: 80% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  position: absolute;
+  opacity: 0.9;
+}
+
+.info-card__image-exposure--blend {
+  background-image: url("http://nollfuneral.com/wp-content/uploads/2017/06/sky-and-clouds.jpg");
+  background-repeat: no-repeat;
+  background-color: #fff;
+  mix-blend-mode: soft-light;
+  background-position: -5rem;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: absolute;
+  -webkit-animation: blendAnimate 30s linear infinite;
+          animation: blendAnimate 30s linear infinite;
+}
+
+.close {
+  width: 2rem;
+  height: 0.25rem;
+  background-color: #217C46;
+  position: absolute;
+  top: 5.5rem;
+  right: 2rem;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  cursor: pointer;
+}
+.close:before {
+  content: '';
+  display: block;
+  width: 2rem;
+  height: 0.25rem;
+  background: #217C46;
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+@-webkit-keyframes blendAnimate {
+  0% {
+    background-position: 0;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0;
+  }
+}
+
+@keyframes blendAnimate {
+  0% {
+    background-position: 0;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+
+    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+<head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      -webkit-perspective: 3000px;
+      perspective: 3000px;
+      max-width: 768px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    @media (min-width: 768px) {
+      ul {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+        -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 1rem;
+      }
+    }
+    .box {
+      width: 100%;
+      height: 200px;
+      margin: -3rem 0 0;
+      -webkit-transform: translateY(10vh) skew(60deg, -15deg) rotateX(40deg);
+      transform: translateY(10vh) skew(60deg, -15deg) rotateX(40deg);
+      box-shadow: -5px 5px 30px 1px rgba(0, 0, 0, 0.3);
+      -webkit-transition: all 300ms ease;
+      transition: all 300ms ease;
+    }
+
+    .box-1 {
+      background-image: url(../PIX/j5.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+    }
+
+    .box-2 {
+      background-image: url(../PIX/brain.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .box-3 {
+      background-image: url(../PIX/rose.png);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .box-4 {
+      background-image: url(../PIX/fridas.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .box-5 {
+      background-image: url(../PIX/girlsroom.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .box-6 {
+      background-image: url(../PIX/east.png);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .view-gallery {
+      text-align: center;
+      margin: 5vh 0;
+    }
+    .view-gallery button {
+      background: #CC4829;
+      color: white;
+      padding: 1rem 2rem;
+      border: 0;
+      -webkit-transition: background 200ms ease;
+      transition: background 200ms ease;
+    }
+    .view-gallery button:hover {
+      cursor: pointer;
+      background: rgba(255, 0, 0, 0.8);
+    }
+
+    .animated {
+      -webkit-transform: translateY(0) skew(0, 0) rotateX(0deg);
+      transform: translateY(0) skew(0, 0) rotateX(0deg);
+      margin: 0 0 1rem;
+    }
+
+    @media (min-width: 768px) {
+      .animated {
+        margin: 0;
+      }
+    }
+  </style>
+</head>

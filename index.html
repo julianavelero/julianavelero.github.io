@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Juliana</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="./css/index.css">
+
+
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+      width: 100%;
+    }
+    .fullscreen-bg {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      overflow: hidden;
+      z-index: -1000;
+      top: -10%;
+    }
+    .fullscreen-bg__video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 110%;
+      height: 110%;
+    }
+  </style>
+</head>
+<body>
+
+<div class="fullscreen-bg">
+  <video autoplay class="video" id="bgvid" width="100%" height="110%">
+   <source src="pix/intro.mp4" type="video/mp4">
+  </video>
+</div>
+
+<style>
+  body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+  }
+  .container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: none;
+    z-index: -1000;
+    top: -10%;
+  }
+  .container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+</style>
+
+</head>
+
+
+
+<body>
+
+
+<!-- Navbar (sit on top) -->
+
+<div class="wrapper">
+  <input type="checkbox" id="menuToggler" class="input-toggler" value="1" autofocus="true"/>
+  <label for="menuToggler" id="menuTogglerLabel" class="menu-toggler" role="button" aria-pressed="false" aria-expanded="false" aria-label="Navigation button">
+    <span class="menu-toggler__line"></span>
+    <span class="menu-toggler__line"></span>
+    <span class="menu-toggler__line"></span>
+  </label>
+  <nav id="sidebar" class="sidebar" role="navigation" aria-labelledby="menuTogglerLabel" aria-hidden="true">
+    <ul id="menubar" class="menu" role="menubar" aria-orientation="vertical">
+      <li class="menu__item" role"none"><a class="menu__link" href="html/workpage.html" role="menuitem" tabindex="-1">Work</a></li>
+      <li class="menu__item" role"none"><a class="menu__link" href="html/velez copy.html" role="menuitem" tabindex="-1">About</a></li>
+      <li class="menu__item" role"none"><a class="menu__link" href="html/contact.html" role="menuitem" tabindex="-1">Collaborate</a></li>
+
+    </ul>
+  </nav>
+
+  <script
+  menuToggler.addEventListener('change', function () {
+    if (menuToggler.checked) {
+      menuTogglerLabel.setAttribute('aria-pressed', 'true');
+      sidebar.setAttribute('aria-hidden', 'false');
+    } else {
+      menuTogglerLabel.setAttribute('aria-pressed', 'false');
+      sidebar.setAttribute('aria-hidden', 'true');
+    }
+
+    var _iteratorNormalCompletion = true;
+    var _didIteratorError = false;
+    var _iteratorError = undefined;
+
+    try {
+      for (var _iterator = menuItems[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {if (window.CP.shouldStopExecution(1)){break;}if (window.CP.shouldStopExecution(1)){break;}if (window.CP.shouldStopExecution(1)){break;}
+        var menuItem = _step.value;
+
+        if (menuToggler.checked) {
+          menuItem.setAttribute('tabindex', '0');
+        } else {
+          menuItem.setAttribute('tabindex', '-1');
+        }
+      }
+  window.CP.exitedLoop(1);
+
+  window.CP.exitedLoop(1);
+
+  window.CP.exitedLoop(1);
+
+    } catch (err) {
+      _didIteratorError = true;
+      _iteratorError = err;
+    } finally {
+      try {
+        if (!_iteratorNormalCompletion && _iterator.return) {
+          _iterator.return();
+        }
+      } finally {
+        if (_didIteratorError) {
+          throw _iteratorError;
+        }
+      }
+    }
+  });
+
+</body>
+</script>
+</html>

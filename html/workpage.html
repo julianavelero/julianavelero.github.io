@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<title>WORK</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/lightbox.css">
+<link rel="stylesheet" href="../css/index.css">
+
+<body>
+  <div class="view-gallery">
+    <button>View Gallery</button>
+  </div>
+  <ul>
+    <a href="../pix/j5.jpg" data-lightbox="gallery" data-title="J5"><li class="box box-1"></li></a>
+    <a href= "../pix/brain.jpg" data-lightbox="gallery"data-title="Stimulate your mind"><li class="box box-2"></li></a>
+    <a href= "../pix/rose.jpg" data-lightbox="gallery"data-title="Womanhood"><li class="box box-3"></li></a>
+    <a href= "../pix/fridas.jpg" data-lightbox="gallery"data-title="Fridas"><li class="box box-4"></li></a>
+    <a href= "../pix/girlsroom.jpg" data-lightbox="gallery"data-title="Girlsroom"><li class="box box-5"></li></a>
+    <a href= "../pix/east.jpg" data-lightbox="gallery"data-title="East with Love"><li class="box box-6"></li></a>
+
+  </ul>
+
+<script src="../js/lightbox-plus-jquery.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+
+
+  <script>
+  $('.view-gallery button').on('click', function() {
+    $('.box').toggleClass('animated');
+    // $('ul').css({
+    //   'max-width' : '100%'
+    // });
+  });
+  </script>
+
+  <!-- Navbar (sit on top) -->
+
+<body>
+    <div class="wrapper">
+    <input type="checkbox" id="menuToggler" class="input-toggler" value="1" autofocus="true"/>
+    <label for="menuToggler" id="menuTogglerLabel" class="menu-toggler" role="button" aria-pressed="false" aria-expanded="false" aria-label="Navigation button">
+      <span class="menu-toggler__line"></span>
+      <span class="menu-toggler__line"></span>
+      <span class="menu-toggler__line"></span>
+    </label>
+    <nav id="sidebar" class="sidebar" role="navigation" aria-labelledby="menuTogglerLabel" aria-hidden="true">
+      <ul id="menubar" class="menu" role="menubar" aria-orientation="vertical">
+        <li class="menu__item" role"none"><a class="menu__link" href="../Index.html" role="menuitem" tabindex="-1">Intro</a></li>
+        <li class="menu__item" role"none"><a class="menu__link" href="velez copy.html" role="menuitem" tabindex="-1">About</a></li>
+        <li class="menu__item" role"none"><a class="menu__link" href="#" role="menuitem" tabindex="-1">Collaborate</a></li>
+
+      </ul>
+    </nav>
+
+    <script
+    menuToggler.addEventListener('change', function () {
+      if (menuToggler.checked) {
+        menuTogglerLabel.setAttribute('aria-pressed', 'true');
+        sidebar.setAttribute('aria-hidden', 'false');
+      } else {
+        menuTogglerLabel.setAttribute('aria-pressed', 'false');
+        sidebar.setAttribute('aria-hidden', 'true');
+      }
+
+      var _iteratorNormalCompletion = true;
+      var _didIteratorError = false;
+      var _iteratorError = undefined;
+
+      try {
+        for (var _iterator = menuItems[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {if (window.CP.shouldStopExecution(1)){break;}if (window.CP.shouldStopExecution(1)){break;}if (window.CP.shouldStopExecution(1)){break;}
+          var menuItem = _step.value;
+
+          if (menuToggler.checked) {
+            menuItem.setAttribute('tabindex', '0');
+          } else {
+            menuItem.setAttribute('tabindex', '-1');
+          }
+        }
+    window.CP.exitedLoop(1);
+
+    window.CP.exitedLoop(1);
+
+    window.CP.exitedLoop(1);
+
+      } catch (err) {
+        _didIteratorError = true;
+        _iteratorError = err;
+      } finally {
+        try {
+          if (!_iteratorNormalCompletion && _iterator.return) {
+            _iterator.return();
+          }
+        } finally {
+          if (_didIteratorError) {
+            throw _iteratorError;
+          }
+        }
+      }
+    });
+
+</body>
+  </script>
+
+</html>
