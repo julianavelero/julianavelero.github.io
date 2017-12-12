@@ -70,7 +70,7 @@ h1 {
 }
 
 .info-card__image-exposure__item {
-  background-image: url(../PIX/me.png);
+  background-image: url(../pix/me.png);
   background-color: #fff;
   background-position: 80% 50%;
   background-size: cover;
@@ -232,7 +232,7 @@ h1 {
     }
 
     .box-1 {
-      background-image: url(../PIX/j5.jpg);
+      background-image: url(../pix/j5.jpg);
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -240,35 +240,35 @@ h1 {
     }
 
     .box-2 {
-      background-image: url(../PIX/brain.jpg);
+      background-image: url(../pix/brain.jpg);
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
     }
 
     .box-3 {
-      background-image: url(../PIX/rose.png);
+      background-image: url(../pix/rose.png);
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
     }
 
     .box-4 {
-      background-image: url(../PIX/fridas.jpg);
+      background-image: url(../pix/fridas.jpg);
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
     }
 
     .box-5 {
-      background-image: url(../PIX/girlsroom.jpg);
+      background-image: url(../pix/girlsroom.jpg);
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
     }
 
     .box-6 {
-      background-image: url(../PIX/east.png);
+      background-image: url(../pix/east.png);
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
